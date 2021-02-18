@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e5e5"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/editTextDetailsExpense"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Details"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAmountExpense"
+        app:layout_constraintStart_toStartOf="@+id/editTextAmountExpense"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAmountExpense" />
+
+    <TextView
+        android:id="@+id/textViewExpense"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="EXPENSE"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAmountExpense"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="24dp"
+        android:text="Regular"
+        android:textOff="Irregular"
+        android:textOn="Regular"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintStart_toStartOf="@+id/editTextDetailsExpense"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailsExpense" />
+
+    <Button
+        android:id="@+id/buttonExpense"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="addExpense"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="324dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="showPopup"
+        android:text="TYPE SELECTION"
+        app:layout_constraintEnd_toEndOf="@+id/textViewExpense"
+        app:layout_constraintStart_toStartOf="@+id/textViewExpense"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExpense" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:text="SELECT CREDIT CARD"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDetailsExpense"
+        app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+
+</android.support.constraint.ConstraintLayout>
