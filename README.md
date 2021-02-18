@@ -1,5 +1,6 @@
-![The Wallet](https://github.com/alkimonen/The-Wallet/blob/main/icon/icon.png?raw=true)
 # The Wallet
+![The Wallet](https://github.com/alkimonen/The-Wallet/blob/main/icon/icon.png?raw=true)
+
 
 The Wallet is an Android application to keep track of the user's budget. This project was a group project done when I was a freshman in college. The project was written in Android Studio. Feel free to take a look at the code. There is also an apk file in the project. It can be used to install the application into an Android device.
 
